@@ -5,9 +5,9 @@ Personal documentation of the KodeKloud 100 Days of DevOps Challenge. Each day c
 ## � Progress Overview
 
 ```
-Completed: 0/100 (0%)
+Completed: 1/100 (1%)
 
-████████████████████████████████████████ 0%
+████████████████████████████████████████ 1%
 ```
 
 > **Tip:** Check off each day as you complete it to update your progress!
@@ -43,7 +43,7 @@ The 100 Days of DevOps is a structured learning program covering:
 
 | ✓ | Day | Challenge | Topic |
 |---|-----|-----------|-------|
-| [ ] | [Day 01](./Days/day-01-linux-user-setup/) | Linux User Setup with Non-Interactive Shell | User Management |
+| [x] | [Day 01](./Days/day-01-linux-user-setup/) | Linux User Setup with Non-Interactive Shell | User Management |
 | [ ] | [Day 02](./Days/day-02-temporary-user-setup/) | Temporary User Setup with Expiry | User Management |
 | [ ] | [Day 03](./Days/day-03-secure-root-ssh/) | Secure Root SSH Access | SSH Security |
 | [ ] | [Day 04](./Days/day-04-script-execution-permissions/) | Script Execution Permissions | File Permissions |

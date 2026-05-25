@@ -17,57 +17,103 @@ The system administrator team at xFusionCorp Industries needs a user account for
 Key requirements:
 - Create a user named `yousuf`
 - Assign a non-interactive shell
-- Apply the change on App Server 3
+- Apply the change on App Server 3 (`stapp03`)
 
 ---
 
 ## 📚 Prerequisites
 
-- Access to App Server 3 with sufficient privileges to create users
-- Familiarity with Linux user management commands
-- Knowledge of non-interactive shells such as `/sbin/nologin` or `/usr/sbin/nologin`
+- Access to App Server 3 (`stapp03`) with sufficient privileges to create users
+- SSH access to `stapp03`
+- Ability to escalate to root with `sudo su`
+- Knowledge of non-interactive shells such as `/sbin/nologin`
+
+**Step 1 Screenshot (SSH to App Server 3):**
+
+![App Server 3 SSH Access](./image-1.png)
 
 ---
 
 ## 💻 Step-by-Step Solution
 
-### Step 1: Create the user with a non-interactive shell
+### Step 1: SSH to App Server 3 (stapp03)
 
 **Description:**
-Create a local Linux user named `yousuf` and set the shell to `/sbin/nologin` so the account cannot be used for interactive login sessions.
+Connect to App Server 3 using the challenge-provided SSH credentials.
 
 **Commands:**
 ```bash
-sudo useradd -s /sbin/nologin yousuf
+ssh <username>@stapp03
 ```
 
 **Expected Output:**
 ```
-# no output when the command succeeds
+# login prompt or direct shell on stapp03
 ```
-
-**Screenshot:**
-![Step 1 Screenshot](./image.png)
 
 ---
 
-### Step 2: Verify the user's shell configuration
+### Step 2: Become root on the server
 
 **Description:**
-Confirm that the `yousuf` user exists and that the shell is configured as non-interactive.
+Use `sudo su` to switch to the root user before creating the system account.
 
 **Commands:**
 ```bash
-getent passwd yousuf
+sudo su
 ```
 
 **Expected Output:**
 ```
-yousuf:x:1001:1001::/home/yousuf:/sbin/nologin
+# root prompt, e.g. root@stapp03:/#
 ```
 
 **Screenshot:**
-![Step 2 Screenshot](./image-1.png)
+![Root Access](./image-2.png)
+
+---
+
+### Step 3: Create the `yousuf` user with a non-interactive shell
+
+**Description:**
+Create the `yousuf` user and set its login shell to `/sbin/nologin` so it cannot be used for interactive logins.
+
+**Commands:**
+```bash
+adduser -s /sbin/nologin yousuf
+passwd yousuf
+```
+
+**Expected Output:**
+```
+Changing password for user yousuf.
+New password:
+Retype new password:
+passwd: all authentication tokens updated successfully.
+```
+
+**Screenshot:**
+![Create user and set shell](./image-3.png)
+
+---
+
+### Step 4: Confirm the account cannot log in interactively
+
+**Description:**
+From a new terminal or host, attempt to SSH as `yousuf` and verify the account is not available for login.
+
+**Commands:**
+```bash
+ssh yousuf@stapp03
+```
+
+**Expected Output:**
+```
+This account is currently not available.
+```
+
+**Screenshot:**
+![Verify non-interactive shell](./image-4.png)
 
 ---
 
@@ -76,15 +122,15 @@ yousuf:x:1001:1001::/home/yousuf:/sbin/nologin
 **How to verify the solution is correct:**
 - [ ] Confirm the `yousuf` user exists in `/etc/passwd`
 - [ ] Confirm the shell is set to `/sbin/nologin`
-- [ ] Confirm the user cannot obtain an interactive shell session
+- [ ] Confirm SSH login as `yousuf` returns `This account is currently not available.`
 
-**Verification Command:**
+**Verification Commands:**
 ```bash
-getent passwd yousuf
+ssh yousuf@stapp03
 ```
 
 **Final Screenshot (Evidence of Completion):**
-![Completion Screenshot](./image-2.png)
+![Completion Screenshot](./image-4.png)
 
 ---
 
@@ -95,52 +141,51 @@ getent passwd yousuf
 | **Status** | ✅ Success |
 | **Time Taken** | ~0.5h |
 | **Key Output** | `yousuf` created with `/sbin/nologin` shell |
-| **Challenges** | Minimal; task was straightforward once the required shell was identified |
+| **Challenges** | Verified non-interactive login behavior from a separate terminal |
 
 ---
 
 ## 🔑 Key Concepts Learned
 
-1. **Linux user creation** — How to create a new account with `useradd`
-2. **Non-interactive shell configuration** — Using `/sbin/nologin` to prevent interactive logins
-3. **User verification** — Checking user details with `getent passwd`
+1. **Linux user creation** — Creating a new user account with `adduser`
+2. **Non-interactive shell configuration** — Using `/sbin/nologin` to block interactive logins
+3. **Verification across terminals** — Testing login behavior from a separate terminal session
 
 ---
 
 ## ⚠️ Common Mistakes & Troubleshooting
 
 ### Issue 1: Wrong shell path
-**Cause:** Using an interactive shell like `/bin/bash` instead of a non-interactive shell
-**Solution:** Set the shell to `/sbin/nologin` or `/usr/sbin/nologin`
+**Cause:** Using an interactive shell instead of `/sbin/nologin`
+**Solution:** Update the shell with `usermod` or recreate the user with the correct shell
 
 ```bash
-sudo usermod -s /sbin/nologin yousuf
+usermod -s /sbin/nologin yousuf
 ```
 
-### Issue 2: User already exists
-**Cause:** The account `yousuf` already exists on the system
-**Solution:** Check the existing account and update the shell if necessary
+### Issue 2: User cannot be created without root access
+**Cause:** Running `adduser` without sufficient privileges
+**Solution:** Use `sudo su` first or run the command with `sudo`
 
 ```bash
-getent passwd yousuf
-sudo usermod -s /sbin/nologin yousuf
+sudo adduser -s /sbin/nologin yousuf
 ```
 
 ---
 
 ## 📌 Key Takeaways
 
-- **What worked well:** Creating the user with `useradd` and verifying the shell using `getent passwd`
-- **What was challenging:** Identifying the correct non-interactive shell path for the environment
-- **Next steps:** Practice creating service accounts and enforcing non-interactive shells for automation tasks
+- **What worked well:** SSH to App Server 3, switching to root, and creating the non-interactive service user
+- **What was challenging:** Confirming the login attempt from a separate terminal returned the expected account restriction
+- **Next steps:** Continue documenting the remaining challenge days with the same step-by-step approach
 
 ---
 
 ## 🔗 Resources & References
 
-- [Linux `useradd` man page](https://man7.org/linux/man-pages/man8/useradd.8.html)
+- [Linux `adduser` man page](https://man7.org/linux/man-pages/man8/adduser.8.html)
 - [Linux `nologin` shell documentation](https://man7.org/linux/man-pages/man8/nologin.8.html)
-- [Kubernetes service account concepts](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
+- [Linux user account management](https://linux.die.net/man/8/useradd)
 
 ---
 
@@ -149,10 +194,13 @@ sudo usermod -s /sbin/nologin yousuf
 ### Files Created/Modified:
 - `README.md` — Day 1 challenge documentation and solution summary
 
-### Useful Scripts/Configs:
+### Useful Commands:
 ```bash
-sudo useradd -s /sbin/nologin yousuf
-getent passwd yousuf
+ssh <username>@stapp03
+sudo su
+adduser -s /sbin/nologin yousuf
+passwd yousuf
+ssh yousuf@stapp03
 ```
 
 ---
@@ -166,8 +214,8 @@ getent passwd yousuf
 ## 📝 Notes
 
 - The `yousuf` account is configured for non-interactive use only.
-- If App Server 3 uses `/usr/sbin/nologin`, adjust the shell path accordingly.
-- Use `sudo` when running user management commands if you are not root.
+- SSH login as `yousuf` should be blocked by the non-interactive shell.
+- Use the provided challenge credentials when connecting to `stapp03`.
 
 ---
 
