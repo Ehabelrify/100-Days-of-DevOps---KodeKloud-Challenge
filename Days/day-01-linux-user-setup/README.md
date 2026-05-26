@@ -139,7 +139,7 @@ ssh yousuf@stapp03
 | Item | Details |
 |------|---------|
 | **Status** | ✅ Success |
-| **Time Taken** | ~0.5h |
+| **Time Taken** | ~0.2h |
 | **Key Output** | `yousuf` created with `/sbin/nologin` shell |
 | **Challenges** | Verified non-interactive login behavior from a separate terminal |
 
