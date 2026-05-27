@@ -1,6 +1,6 @@
 # Day 02 — Temporary User Setup with Expiry
 
-**Date:** 2026-05-26 | **Duration:** ~0.5h | **Status:** ✅ Complete
+**Date:** 2026-05-26 | **Duration:** ~0.2h | **Status:** ✅ Complete
 
 ---
 

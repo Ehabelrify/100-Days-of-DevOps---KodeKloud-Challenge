@@ -1,6 +1,6 @@
 # Day 01 — Linux User Setup
 
-**Date:** 2026-05-25 | **Duration:** ~0.5h | **Status:** ✅ Complete
+**Date:** 2026-05-25 | **Duration:** ~0.2h | **Status:** ✅ Complete
 
 ---
 
