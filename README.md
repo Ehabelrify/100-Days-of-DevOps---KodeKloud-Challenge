@@ -5,9 +5,9 @@ Personal documentation of the KodeKloud 100 Days of DevOps Challenge. Each day c
 ## � Progress Overview
 
 ```
-Completed: 3/100 (3%)
+Completed: 4/100 (4%)
 
-███░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 3%
+████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 4%
 ```
 
 > **Tip:** Check off each day as you complete it to update your progress!
@@ -46,7 +46,7 @@ The 100 Days of DevOps is a structured learning program covering:
 | [x] | [Day 01](./Days/day-01-linux-user-setup/) | Linux User Setup with Non-Interactive Shell | User Management |
 | [x] | [Day 02](./Days/day-02-temporary-user-setup/) | Temporary User Setup with Expiry | User Management |
 | [x] | [Day 03](./Days/day-03-secure-root-ssh/) | Secure Root SSH Access | SSH Security |
-| [ ] | [Day 04](./Days/day-04-script-execution-permissions/) | Script Execution Permissions | File Permissions |
+| [x] | [Day 04](./Days/day-04-script-execution-permissions/) | Script Execution Permissions | File Permissions |
 | [ ] | [Day 05](./Days/day-05-selinux-installation/) | SELinux Installation and Configuration | Security |
 | [ ] | [Day 06](./Days/day-06-cron-job/) | Create a Cron Job | Automation |
 | [ ] | [Day 07](./Days/day-07-linux-ssh-authentication/) | Linux SSH Authentication | SSH |
@@ -198,7 +198,7 @@ Progress can be tracked by checking off completed days in the tables below.
 
 - **Total Challenges:** 100
 - **Status:** In Progress
-- **Completion Rate:** 3/100
+- **Completion Rate:** 4/100
 
 > **Tracking:** Check boxes below to mark completed days and monitor progress across all 100 challenges.
 
