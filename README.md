@@ -5,7 +5,7 @@ Personal documentation of the KodeKloud 100 Days of DevOps Challenge. Each day c
 ## � Progress Overview
 
 ```
-Completed: 5/100 (5%)
+Completed: 6/100 (6%)
 
 ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 5%
 ```
@@ -48,7 +48,7 @@ The 100 Days of DevOps is a structured learning program covering:
 | [x] | [Day 03](./Days/day-03-secure-root-ssh/) | Secure Root SSH Access | SSH Security |
 | [x] | [Day 04](./Days/day-04-script-execution-permissions/) | Script Execution Permissions | File Permissions |
 | [x] | [Day 05](./Days/day-05-selinux-installation/) | SELinux Installation and Configuration | Security |
-| [ ] | [Day 06](./Days/day-06-cron-job/) | Create a Cron Job | Automation |
+| [x] | [Day 06](./Days/day-06-cron-job/) | Create a Cron Job | Automation |
 | [ ] | [Day 07](./Days/day-07-linux-ssh-authentication/) | Linux SSH Authentication | SSH |
 | [ ] | [Day 08](./Days/day-08-install-ansible/) | Install Ansible | Orchestration |
 | [ ] | [Day 09](./Days/day-09-mariadb-troubleshooting/) | MariaDB Troubleshooting | Databases |
@@ -198,7 +198,7 @@ Progress can be tracked by checking off completed days in the tables below.
 
 - **Total Challenges:** 100
 - **Status:** In Progress
-- **Completion Rate:** 5/100
+- **Completion Rate:** 6/100
 
 > **Tracking:** Check boxes below to mark completed days and monitor progress across all 100 challenges.
 
