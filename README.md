@@ -5,9 +5,9 @@ Personal documentation of the KodeKloud 100 Days of DevOps Challenge. Each day c
 ## � Progress Overview
 
 ```
-Completed: 8/100 (7%)
+Completed: 10/100 (7%)
 
-████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 8%
+████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 10%
 ```
 
 > **Tip:** Check off each day as you complete it to update your progress!
@@ -198,7 +198,7 @@ Progress can be tracked by checking off completed days in the tables below.
 
 - **Total Challenges:** 100
 - **Status:** In Progress
-- **Completion Rate:** 8/100
+- **Completion Rate:** 10/100
 
 > **Tracking:** Check boxes below to mark completed days and monitor progress across all 100 challenges.
 
