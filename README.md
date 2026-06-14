@@ -5,9 +5,9 @@ Personal documentation of the KodeKloud 100 Days of DevOps Challenge. Each day c
 ## � Progress Overview
 
 ```
-Completed: 10/100 (7%)
+Completed: 13/100 (13%)
 
-████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 10%
+█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 13%
 ```
 
 > **Tip:** Check off each day as you complete it to update your progress!
@@ -51,11 +51,11 @@ The 100 Days of DevOps is a structured learning program covering:
 | [x] | [Day 06](./Days/day-06-cron-job/) | Create a Cron Job | Automation |
 | [x] | [Day 07](./Days/day-07-linux-ssh-authentication/) | Linux SSH Authentication | SSH |
 | [x] | [Day 08](./Days/day-08-install-ansible/) | Install Ansible | Orchestration |
-| [ ] | [Day 09](./Days/day-09-mariadb-troubleshooting/) | MariaDB Troubleshooting | Databases |
-| [ ] | [Day 10](./Days/day-10-linux-bash-scripts/) | Linux Bash Scripts | Scripting |
-| [ ] | [Day 11](./Days/day-11-install-tomcat-server/) | Install and Configure Tomcat Server | Web Servers |
-| [ ] | [Day 12](./Days/day-12-linux-network-services/) | Linux Network Services | Networking |
-| [ ] | [Day 13](./Days/day-13-iptables-configuration/) | IPTables Installation And Configuration | Firewall |
+| [x] | [Day 09](./Days/day-09-mariadb-troubleshooting/) | MariaDB Troubleshooting | Databases |
+| [x] | [Day 10](./Days/day-10-linux-bash-scripts/) | Linux Bash Scripts | Scripting |
+| [x] | [Day 11](./Days/day-11-install-tomcat-server/) | Install and Configure Tomcat Server | Web Servers |
+| [x] | [Day 12](./Days/day-12-linux-network-services/) | Linux Network Services | Networking |
+| [x] | [Day 13](./Days/day-13-iptables-configuration/) | IPTables Installation And Configuration | Firewall |
 | [ ] | [Day 14](./Days/day-14-linux-process-troubleshooting/) | Linux Process Troubleshooting | Process Management |
 | [ ] | [Day 15](./Days/day-15-setup-ssl-nginx/) | Setup SSL for Nginx | SSL/TLS |
 | [ ] | [Day 16](./Days/day-16-install-nginx-lbr/) | Install and Configure Nginx as an LBR | Load Balancing |
@@ -198,7 +198,7 @@ Progress can be tracked by checking off completed days in the tables below.
 
 - **Total Challenges:** 100
 - **Status:** In Progress
-- **Completion Rate:** 10/100
+- **Completion Rate:** 13/100
 
 > **Tracking:** Check boxes below to mark completed days and monitor progress across all 100 challenges.
 
