@@ -5,9 +5,9 @@ Personal documentation of the KodeKloud 100 Days of DevOps Challenge. Each day c
 ## � Progress Overview
 
 ```
-Completed: 14/100 (14%)
+Completed: 15/100 (15%)
 
-█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 14%
+█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 15%
 ```
 
 > **Tip:** Check off each day as you complete it to update your progress!
@@ -57,7 +57,7 @@ The 100 Days of DevOps is a structured learning program covering:
 | [x] | [Day 12](./Days/day-12-linux-network-services/) | Linux Network Services | Networking |
 | [x] | [Day 13](./Days/day-13-iptables-configuration/) | IPTables Installation And Configuration | Firewall |
 | [x] | [Day 14](./Days/day-14-linux-process-troubleshooting/) | Linux Process Troubleshooting | Process Management |
-| [ ] | [Day 15](./Days/day-15-setup-ssl-nginx/) | Setup SSL for Nginx | SSL/TLS |
+| [x] | [Day 15](./Days/day-15-setup-ssl-nginx/) | Setup SSL for Nginx | SSL/TLS |
 | [ ] | [Day 16](./Days/day-16-install-nginx-lbr/) | Install and Configure Nginx as an LBR | Load Balancing |
 | [ ] | [Day 17](./Days/day-17-install-postgresql/) | Install and Configure PostgreSQL | Databases |
 | [ ] | [Day 18](./Days/day-18-install-db-server/) | Install and Configure DB Server | Databases |
@@ -198,7 +198,7 @@ Progress can be tracked by checking off completed days in the tables below.
 
 - **Total Challenges:** 100
 - **Status:** In Progress
-- **Completion Rate:** 14/100
+- **Completion Rate:** 15/100
 
 > **Tracking:** Check boxes below to mark completed days and monitor progress across all 100 challenges.
 
