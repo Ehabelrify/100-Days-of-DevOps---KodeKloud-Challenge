@@ -5,9 +5,9 @@ Personal documentation of the KodeKloud 100 Days of DevOps Challenge. Each day c
 ## � Progress Overview
 
 ```
-Completed: 19/100 (19%)
+Completed: 20/100 (20%)
 
-█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 19%
+█████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 20%
 ```
 
 > **Tip:** Check off each day as you complete it to update your progress!
@@ -62,7 +62,7 @@ The 100 Days of DevOps is a structured learning program covering:
 | [x] | [Day 17](./Days/day-17-install-postgresql/) | Install and Configure PostgreSQL | Databases |
 | [x] | [Day 18](./Days/day-18-install-db-server/) | Install and Configure DB Server | Databases |
 | [x] | [Day 19](./Days/day-19-install-web-application/) | Install and Configure Web Application | Web Services |
-| [ ] | [Day 20](./Days/day-20-nginx-php-fpm-unix-sock/) | Configure Nginx + PHP-FPM Using Unix Socket | Web Servers |
+| [x] | [Day 20](./Days/day-20-nginx-php-fpm-unix-sock/) | Configure Nginx + PHP-FPM Using Unix Socket | Web Servers |
 
 ### **Phase 2: Git & Version Control (Days 21-34)**
 
@@ -198,7 +198,7 @@ Progress can be tracked by checking off completed days in the tables below.
 
 - **Total Challenges:** 100
 - **Status:** In Progress
-- **Completion Rate:** 19/100
+- **Completion Rate:** 20/100
 
 > **Tracking:** Check boxes below to mark completed days and monitor progress across all 100 challenges.
 
